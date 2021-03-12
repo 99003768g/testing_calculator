@@ -1,6 +1,8 @@
 #include "unity.h"
 #include "temperature_conversion.h"
 #include "calculator_operation.h"
+#include "factorial.h"
+#include "area.h"
 
 /* Prototypes for all the test functions */
 void test_add(void);
@@ -19,6 +21,48 @@ void tearDown(){}
 
 
 /* Write all the test functions */ 
+
+/////// Ankit
+void test_factorial_positive_num(void)
+{
+    long result = 1;
+    TEST_ASSERT_EQUAL(SUCCESS, find_factorial(10,&result));
+    TEST_ASSERT_EQUAL(3628800, result);
+}
+void test_factorial_negative_num(void)
+{
+    long result = 1;
+    TEST_ASSERT_EQUAL(SUCCESS, find_factorial(10,&result));
+}
+
+void test_positive_area_square()
+{
+    TEST_ASSERT_EQUAL(100, square_area(10));
+}
+ void test_Negative_area_square()
+{
+     TEST_ASSERT_EQUAL(144, square_area(-12));
+}
+ void test_positive_rect_area()
+{
+   TEST_ASSERT_EQUAL(200, rect_area(10,20));
+}
+void test_Negative_rect_area()
+{
+    TEST_ASSERT_EQUAL(-120, rect_area(-12,10));
+}
+void test_positive_triangle_area()
+{
+     TEST_ASSERT_EQUAL(100, triangle_area(10,20));
+}
+void test_Negative_triangle_area()
+{
+   TEST_ASSERT_EQUAL(-60, triangle_area(-12,10));
+}
+
+/////////////  ankit
+
+
 void test_add(void) {
   TEST_ASSERT_EQUAL(30, add(10, 20));
   TEST_ASSERT_EQUAL(-10, add(10, -20));
@@ -89,6 +133,16 @@ int main(void)
 
   RUN_TEST(test_temperature_conversion_f_to_c);
   RUN_TEST(test_temperature_conversion_c_to_f);
+
+  RUN_TEST(test_factorial_positive_num);
+  RUN_TEST(test_positive_area_square);
+  RUN_TEST(test_positive_rect_area);
+  RUN_TEST(test_positive_triangle_area);
+  RUN_TEST(test_Negative_area_square);
+  RUN_TEST(test_Negative_rect_area);
+  RUN_TEST(test_Negative_triangle_area);
+
+return UNITY_END();
   
-  return UNITY_END();
+  
 }
