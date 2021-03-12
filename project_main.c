@@ -1,10 +1,23 @@
 #include "calculator_operation.h"
 #include "temperature_conversion.h"
+#include "factorial.h"
+#include "area.h"
+
 
 int main()
 {
     float input;
     int operand1, operand2;
+
+    double radius;
+    long result;
+    int num1,num2;
+
+    find_factorial(num1,&result);
+    area_circum(radius);
+    rect_area(num1,num2);
+    square_area(num1);
+    triangle_area(num1,num2);
 
     add(operand1, operand2);
     subtract(operand1, operand2);
@@ -14,6 +27,4 @@ int main()
     temperature_conversion_f_to_c(input);
     temperature_conversion_c_to_f(input);
 
-
-    return 0;
 }
