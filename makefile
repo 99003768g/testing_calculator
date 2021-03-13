@@ -11,7 +11,10 @@ src/factorial.c\
 src/calculator_operation.c\
 src/temperature_conversion.c\
 src/profit_loss.c\
-src/Dec_to_bin.c
+src/Dec_to_bin.c\
+src/SI.c\
+src/sqrt.c\
+src/volume.c
 
 
 # All test source files
@@ -21,6 +24,9 @@ src/factorial.c\
 src/area.c\
 src/profit_loss.c\
 src/Dec_to_bin.c\
+src/SI.c\
+src/sqrt.c\
+src/volume.c\
 test/test_file.c\
 unity/unity.c
 
