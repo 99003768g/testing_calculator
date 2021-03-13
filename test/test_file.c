@@ -5,6 +5,9 @@
 #include "area.h"
 #include "profit_loss.h"
 #include "Dec_to_bin.h"
+#include "SI.h"
+#include "sqrt.h"
+#include "volume.h"
 
 /* Prototypes for all the test functions */
 void test_add(void);
@@ -23,6 +26,12 @@ void test_loss(void);
 void test1_loss(void);
 void test_dectobin(void);
 
+void test_SI(void);
+void test_SI1(void);
+void test_sqrt(void);
+void test_sqrt1(void);
+void test_volume(void);
+void test_volume1(void);
 
 /* Required by the unity test framework */
 void setUp(){}
@@ -160,6 +169,31 @@ void test_dectobin(void)
   TEST_ASSERT_EQUAL(110, dectobin(6));
 }
 
+void test_SI(void) 
+{
+  TEST_ASSERT_EQUAL(24, interest(100, 2, 12));
+}
+void test_SI1(void) 
+{
+    TEST_ASSERT_EQUAL(240, interest(1000, 2, 12));
+}
+void test_sqrt(void) 
+{
+  TEST_ASSERT_EQUAL(15, square_Root(225));
+}
+void test_sqrt1(void) 
+{
+    TEST_ASSERT_EQUAL(31, square_Root(961));
+}
+void test_volume(void) 
+{
+  TEST_ASSERT_EQUAL(261.80, volumeofcone(5, 10));
+}
+void test_volume1(void) 
+{
+    TEST_ASSERT_EQUAL(718.38, volumeofcone(7, 14));
+}
+
 int main(void)
 {
   int operand1,operand2;
@@ -194,6 +228,13 @@ int main(void)
   RUN_TEST(test_loss);
   RUN_TEST(test1_loss);
   RUN_TEST(test_dectobin);
+
+  RUN_TEST(test_SI);
+  RUN_TEST(test_SI1);
+  RUN_TEST(test_sqrt);
+  RUN_TEST(test_sqrt1);
+  RUN_TEST(test_volume);
+  RUN_TEST(test_volume1);
 
 return UNITY_END();
   
