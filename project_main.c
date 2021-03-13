@@ -4,7 +4,9 @@
 #include "area.h"
 #include "profit_loss.h"
 #include "Dec_to_bin.h"
-
+#include "volume.h"
+#include "sqrt.h"
+#include "SI.h"
 
 int main()
 {
@@ -35,5 +37,10 @@ int main()
     profit(costprice, sellingprice);
     loss(costprice, sellingprice);
     long dectobin(int number);
+
+   float interest(int P,float R, int T); 
+   double square_Root (double n);
+   float volumeofcone(float a,float b);
+
 
 }
