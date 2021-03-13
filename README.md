@@ -11,3 +11,7 @@ git inspector:
 
 
 ![gir_inspector_calculator](https://user-images.githubusercontent.com/78857841/111027847-d5718400-8418-11eb-9c62-94d08a7c379a.png)
+
+git test cases
+
+![test_cases_calculator](https://user-images.githubusercontent.com/78857841/111027883-094ca980-8419-11eb-8872-3bba8c097f1f.png)
