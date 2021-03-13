@@ -10,5 +10,4 @@
 git inspector:
 
 
-![image](https://user-images.githubusercontent.com/78857841/111027697-e66dc580-8417-11eb-9c4d-6056e6704c04.png)
-
+![gir_inspector_calculator](https://user-images.githubusercontent.com/78857841/111027847-d5718400-8418-11eb-9c62-94d08a7c379a.png)
